@@ -12,15 +12,14 @@
 
 
   
-    <link name="world"/>
+  <link name="world"/>
 
-    <joint name="pole_to_waist" type="fixed">
-        <parent link="world" />
-        <child link="waist_link" />
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint>
+  <joint name="pole_to_waist" type="fixed">
+      <parent link="world" />
+      <child link="waist_link" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
 
-  
   
   <link name="human_waist_link">
     <visual>
