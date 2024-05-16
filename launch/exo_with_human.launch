@@ -7,7 +7,6 @@
   <arg name="z_pos" default="1.08"/>
   <arg name="debug" default="true"/>
 
-  <rosparam file="$(find yr_description)/config/all_controllers.yaml" command="load"/>
   <param name="robot_description" command="$(find xacro)/xacro --inorder $(find yr_description)/urdf/exo_with_human.xacro debug:=$(arg debug)" />
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
    <!-- <arg name="world_name" value="$(find yr_description)/worlds/exo_stairs_world.world"/> -->
